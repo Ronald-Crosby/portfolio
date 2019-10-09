@@ -1,0 +1,25 @@
+.container {
+  max-width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @screen xl {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.col {
+  flex: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
