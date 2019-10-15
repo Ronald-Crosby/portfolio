@@ -1,5 +1,4 @@
-@import "css/typography.css";
-@import "css/grid.css";
+@import "./css/*";
 
 @tailwind base;
 @tailwind components;

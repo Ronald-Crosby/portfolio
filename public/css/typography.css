@@ -38,7 +38,7 @@
     font-weight: 700;
     font-size: 100px;
     line-height: 0.9;
-    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-stroke: 4px #ffffff;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1.5px;
 }
@@ -60,7 +60,7 @@
     font-weight: 700;
     font-size: 96px;
     line-height: 1;
-    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-stroke: 2px #ffffff;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1.25px;
 }
@@ -97,7 +97,8 @@
     font-family: 'Asul', times, serif;
     font-weight: 400;
     line-height: 1.45;
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 3;
 }
 
 .button {
