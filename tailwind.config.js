@@ -8,7 +8,7 @@ module.exports = {
     },
     colors: {
       blue: '#283CDA',
-      purple: '#6400D7',
+      purple: '#6B08DC',
       pink: '#FFC7DB',
       lightBlue: '#00DCFF',
       white: '#ffffff'
@@ -17,12 +17,6 @@ module.exports = {
   variants: {},
   plugins: [],
   corePlugins: {
-    container: {
-      maxWidth: '1540px',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      paddingLeft: '25px',
-      paddingRight: '25px',
-    }
+    container: false
   }
 }

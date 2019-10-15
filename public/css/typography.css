@@ -36,11 +36,23 @@
 .alpha {
     font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 170px;
+    font-size: 100px;
     line-height: 0.9;
     -webkit-text-stroke: 3px #ffffff;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 1.5;
+    letter-spacing: 1.5px;
+}
+
+@screen md {
+  .alpha {
+    font-size: 140px;
+  }
+}
+
+@screen xl {
+   .alpha {
+     font-size: 170px;
+   }
 }
 
 .bravo {
@@ -50,15 +62,27 @@
     line-height: 1;
     -webkit-text-stroke: 3px #ffffff;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 1.25;
+    letter-spacing: 1.25px;
 }
 
 .charlie {
     font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 1.2;
     color: #ffffff;
+}
+
+@screen md {
+  .charlie {
+    font-size: 28px;
+  }
+}
+
+@screen xl {
+  .charlie {
+    font-size: 36px;
+  }
 }
 
 .paragraph-lg {
@@ -73,7 +97,7 @@
     font-family: 'Asul', times, serif;
     font-weight: 400;
     line-height: 1.45;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .button {
@@ -81,4 +105,6 @@
     font-weight: 700;
     line-height: 1;
     font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
 }

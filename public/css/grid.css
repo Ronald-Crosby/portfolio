@@ -4,8 +4,10 @@
   margin-right: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
 
-  @screen xl {
+@screen xl {
+  .container {
     padding-left: 50px;
     padding-right: 50px;
   }
