@@ -23,7 +23,7 @@ body {
   content: '';
   position: absolute;
   width: 80%;
-  height: 1px;
+  height: 2px;
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
@@ -39,17 +39,55 @@ body {
   color: #FFC7DB;
 }
 
+.transitionBackground {
+  transition: background-color 0.5s linear;
+}
+
+.hover-fill-text::after {
+  content: attr(data-text);
+  position: absolute;
+  @apply inset-0;
+  top: 16px;
+  @apply w-full;
+  @apply h-full;
+  -webkit-text-fill-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-fill-text:hover.hover-fill-text::after {
+  opacity: 1;
+}
+
+.position-svg-1 {
+  top: 37%;
+  left: -7%;
+}
+
 @responsive {
   .ml-1\/12 {
     margin-left: 8.333333333%;
+  }
+
+  .-ml-1\/12 {
+    margin-left: -8.333333333%;
   }
 
   .ml-2\/12 {
     margin-left: 16.666666666%;
   }
 
+  .-ml-2\/12 {
+    margin-left: -16.666666666%;
+  }
+
   .ml-3\/12 {
     margin-left: 25%;
   }
+
+  .-ml-3\/12 {
+    margin-left: -25%;
+  }
+
 }
 

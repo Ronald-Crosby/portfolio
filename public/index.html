@@ -8,26 +8,28 @@
   <title>Olly Robinson</title>
 </head>
 <body class="antialiased">
-  <main>
+  <main id="mainTag" class="bg-grey">
 
-    <header class="bg-purple py-40">
+    <header class="py-20 md:py-40 relative | section" data-color="bg-purple">
+      <img src="img/svgs/fade-circle-pink.svg" class="absolute top-0 right-0 w-5/12 md:w-3/12">
+      <img src="img/svgs/outline-circle.svg" class="absolute w-5/12 md:w-3/12 | position-svg-1">
       <div class="container">
         <div class="row">
           <div class="col w-full xl:w-4/12 xl:ml-1/12 text-left">
             <h2 class="alpha" style="-webkit-text-stroke-color: #00DCFF;">Hey!</h2>
-            <p class="charlie text-white mt-8 ml-2">My name is</p>
+            <p class="charlie text-white mt-8 md:ml-2">My name is</p>
           </div>
         </div>
         <div class="row">
-          <div class="col w-full xl:w-10/12 xl:ml-1/12 mt-32 text-right">
-            <h1 class="alpha uppercase">
+          <div class="col w-full xl:w-10/12 xl:ml-1/12 mt-16 md:mt-32 text-right">
+            <h1 class="alpha uppercase break-words">
               Olly <span style="-webkit-text-stroke-color: #FFC7DB">Robinson</span>
             </h1>
             <p class="charlie text-white mt-8 ml-2">and I am a Web Developer</p>
           </div>
         </div>
         <div class="row">
-          <div class="col w-full lg:w-6/12 xl:w-4/12 xl:ml-1/12 mt-40 paragraph-lg">
+          <div class="col w-full lg:w-6/12 xl:w-4/12 xl:ml-1/12 mt-20 md:mt-40 paragraph-lg">
             <p class="mb-6">
               I love working in collaboration with designers and UX experts to build websites that pop.
             </p>
@@ -47,40 +49,169 @@
       </div>
     </header>
 
-    <section class="bg-blue py-48">
+    <section class="py-24 md:py-48 | section" data-color="bg-blue">
       <div class="container">
         <div class="row">
-          <div class="col w-10/12 xl:ml-1/12 mb-48">
-            <h2 class="alpha" style="-webkit-text-stroke-color: #00DCFF;">
+          <div class="col w-full sm:w-10/12 xl:ml-1/12 mb-20 md:mb-48">
+            <h2 class="alpha break-words" style="-webkit-text-stroke-color: #00DCFF;">
               Projects
             </h2>
           </div>
         </div>
         <div class="row">
-          <div class="col w-10/12 ml-1/12 mb-16">
+          <div class="col w-full xl:w-10/12 xl:ml-1/12 mb-16">
             <div class="relative w-full bg-blue" style="padding-top: 64.1379310345%;">
-              <img src="img/landtech-homepage.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl">
+              <img src="img/landtech-homepage.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col w-4/12 ml-2/12">
-            <h3 class="bravo">
+          <div class="col w-full md:w-6/12 xl:w-5/12 xl:ml-1/12 text-right">
+            <h3 class="bravo mb-8 break-words">
               LandTech
             </h3>
           </div>
-          <div class="col w-4/12">
-            <p class="paragraph">
+          <div class="col w-full md:w-6/12 lg:w-5/12 xl:w-4/12 text-right md:text-left">
+            <p class="paragraph mb-2">
               LandTech are a London-based proptech startup aiming to modernise the way property developers source land, apply for planning permission and ultimately build on it.
             </p>
-            <p class="paragraph">
+            <p class="paragraph mb-10">
               I worked on this project with a senior developer at Parallax using Blade templating language and Tailwind CSS. I focused mainly on reusable and responsive layout components, customs hover states and complex SVG work.
             </p>
+            <a href="#" class="button">
+              View live site
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="py-24 md:pt-48 md:pb-64 | section" data-color="bg-purple">
+      <div class="container">
+        <div class="row items-center flex-row-reverse md:flex-row">
+          <div class="col w-full md:w-6/12 lg:w-5/12 xl:w-4/12 lg:ml-1/12 pb-8 mb-16">
+            <h2 class="bravo mb-8">
+              CitiPark PCN
+            </h2>
+            <p class="paragraph mb-2">
+              LandTech are a London-based proptech startup aiming to modernise the way property developers source land, apply for planning permission and ultimately build on it.
+            </p>
+            <p class="paragraph mb-10">
+              I worked on this project with a senior developer at Parallax using Blade templating language and Tailwind CSS. I focused mainly on reusable and responsive layout components, customs hover states and complex SVG work.
+            </p>
+            <a href="#" class="button">
+              View live site
+            </a>
+          </div>
+          <div class="col w-9/12 md:w-5/12 lg:w-5/12 xl:w-4/12 md:ml-1/12">
+            <div class="relative w-full" style="padding-top: 156.5909090909%;">
+              <img src="img/citipark-mobile-homepage.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:pt-0 md:pb-48 | section" data-color="bg-blue">
+      <div class="container">
+
+        <div class="row">
+          <div class="col w-full xl:w-11/12">
+            <h2 class="alpha text-right break-words" style="-webkit-text-stroke-color: #00DCFF;">
+              Smaller Contributions
+            </h2>
+          </div>
+        </div>
+
+        <div class="row mt-24 md:mt-16 lg:mt-32 flex-col-reverse md:flex-row">
+          <div class="col w-full md:w-8/12 xl:w-6/12 xl:ml-1/12 mt-16 md:mt-48">
+            <div class="relative w-full" style="padding-top: 73.2352941176%;">
+              <img src="img/crap-travel-desktop.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
+            </div>
+          </div>
+          <div class="col w-full sm:w-6/12 md:w-4/12 xl:w-3/12 hidden md:block md:mt-64 md:-ml-1/12">
+            <div class="relative w-full" style="padding-top: 170.0315457413%;">
+              <img src="img/crap-travel-mobile.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
+            </div>
+          </div>
+          <div class="col w-full sm:w-8/12 md:w-4/12 xl:w-3/12 md:-ml-3/12 xl:-ml-1/12 md:text-right">
+            <h3 class="bravo md:charlie mb-2 md:mb-0 break-words">
+              Crap Travel
+            </h3>
+            <div class="charlie mb-6" style="-webkit-text-fill-color: #FFC7DB;">
+              Loserboard
+            </div>
+            <a href="#" class="button">
+              View live site
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-24 md:mt-16 lg:mt-32 flex-col md:flex-row">
+          <div class="col w-full md:w-4/12 xl:ml-1/12 text-right md:text-left">
+            <h3 class="bravo md:charlie mb-2 md:mb-0 break-words">
+              Present and Correct
+            </h3>
+            <div class="charlie mb-6" style="-webkit-text-fill-color: #FFC7DB;">
+              Demo rebuild
+            </div>
+            <a href="#" class="button">
+              View live site
+            </a>
+          </div>
+          <div class="col hidden md:block md:w-4/12 xl:w-3/12 md:mt-64 md:-ml-3/12 xl:-ml-2/12">
+            <div class="relative w-full" style="padding-top: 170.0315457413%;">
+              <img src="img/present-and-correct-mobile.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
+            </div>
+          </div>
+          <div class="col w-full md:w-8/12 xl:w-6/12 mt-16 md:mt-48 md:-ml-1/12">
+            <div class="relative w-full" style="padding-top: 73.2352941176%;">
+              <img src="img//present-and-correct-desktop.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-32 min-h-screen-y | section" data-color="bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col w-11/12 lg:w-10/12 lg:ml-1/12 text-right">
+            <h2 class="alpha" style="-webkit-text-stroke-color: #00DCFF;">
+              Get in touch
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col w-9/12 ml-2/12 md:ml-1/12 text-right">
+            <ul class="mt-16 bravo">
+              <li class="relative">
+                <a href="#" class="block py-4 hover-fill-text" data-text="Email">
+                  Email
+                </a>
+              </li>
+              <li class="relative">
+                <a href="#" class="block py-4 hover-fill-text" data-text="My CV">
+                  My CV
+                </a>
+              </li>
+              <li class="relative">
+                <a href="#" class="block py-4 hover-fill-text" data-text="This Repo">
+                  This Repo
+                </a>
+              </li>
+              <li class="relative">
+                <a href="#" class="block py-4 hover-fill-text" data-text="GitHub">
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </main>
+  <script src="/main.js"></script>
 </body>
 </html>

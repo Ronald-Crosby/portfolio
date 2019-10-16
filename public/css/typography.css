@@ -33,79 +33,133 @@
        url("../fonts/Asul/Asul-Bold.woff") format("woff");
 }
 
-.alpha {
-    font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 0.9;
-    -webkit-text-stroke: 4px #ffffff;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 1.5px;
-}
+@responsive {
 
-@screen md {
   .alpha {
-    font-size: 140px;
+      font-family: 'Chivo', Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 0.9;
+      -webkit-text-stroke: 2px #ffffff;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.5px;
   }
-}
 
-@screen xl {
-   .alpha {
-     font-size: 170px;
-   }
-}
+  @screen sm {
+    .alpha {
+      font-size: 85px;
+      -webkit-text-stroke: 4px #ffffff;
+    }
+  }
 
-.bravo {
-    font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 1;
-    -webkit-text-stroke: 2px #ffffff;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 1.25px;
-}
+  @screen md {
+    .alpha {
+      font-size: 140px;
+      -webkit-text-stroke: 4px #ffffff;
+    }
+  }
 
-.charlie {
-    font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 1.2;
-    color: #ffffff;
-}
+  @screen xl {
+    .alpha {
+      font-size: 170px;
+    }
+  }
 
-@screen md {
+  .bravo {
+      font-family: 'Chivo', Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 1;
+      -webkit-text-stroke: 1px #ffffff;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.35px;
+  }
+
+  @screen md {
+    .bravo {
+      -webkit-text-stroke: 2px #ffffff;
+      font-size: 70px;
+    }
+  }
+
+  @screen xl {
+    .bravo {
+      font-size: 96px;
+    }
+  }
+
   .charlie {
-    font-size: 28px;
+      font-family: 'Chivo', Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2;
+      -webkit-text-stroke: 0;
+      -webkit-text-fill-color: #ffffff;
+      color: #ffffff;
+      letter-spacing: 0;
   }
-}
 
-@screen xl {
-  .charlie {
-    font-size: 36px;
+  @screen md {
+    .charlie {
+      font-size: 32px;
+    }
   }
-}
 
-.paragraph-lg {
-    font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.2;
-}
+  @screen xl {
+    .charlie {
+      font-size: 36px;
+    }
+  }
 
-.paragraph {
-    font-family: 'Asul', times, serif;
-    font-weight: 400;
-    line-height: 1.45;
-    font-size: 18px;
-    letter-spacing: 3;
-}
+  .paragraph-lg {
+      font-family: 'Chivo', Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0.1px;
+  }
 
-.button {
-    font-family: 'Asul', times, serif;
-    font-weight: 700;
-    line-height: 1;
-    font-size: 18px;
-    position: relative;
-    transition: color 0.3s;
+  @screen md {
+    .paragraph-lg {
+      font-size: 26px;
+    }
+  }
+
+  .paragraph {
+      font-family: 'Asul', times, serif;
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+  }
+
+  @screen sm {
+    .paragraph {
+      font-size: 16px;
+    }
+  }
+
+  @screen md {
+    .paragraph {
+      font-size: 18px;
+    }
+  }
+
+
+  .button {
+      font-family: 'Asul', times, serif;
+      font-weight: 700;
+      line-height: 1;
+      font-size: 14px;
+      position: relative;
+      transition: color 0.3s;
+  }
+
+  @screen md {
+    .button {
+      font-size: 18px;
+    }
+  }
+
+
 }
