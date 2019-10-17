@@ -10,10 +10,21 @@
 <body class="antialiased">
   <main id="mainTag" class="bg-grey">
 
-    <header class="py-20 md:py-40 relative | section" data-color="bg-purple">
-      <img src="img/svgs/fade-circle-pink.svg" class="absolute top-0 right-0 w-5/12 md:w-3/12">
-      <img src="img/svgs/outline-circle.svg" class="absolute w-5/12 md:w-3/12 | position-svg-1">
-      <div class="container">
+    <header class="py-20 md:py-56 relative z-10 | section" data-color="bg-purple">
+
+      <img src="img/svgs/fade-circle-pink.svg" class="absolute top-0 right-0 w-5/12 md:w-3/12 svg-shadow">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="stroke-current absolute text-lightBlue opacity-25 | position-svg-1">
+        <rect width="262" height="262" x="20" y="550" fill="none" stroke-width="20" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+      </svg>
+
+      <img src="img/svgs/double-circle-fill.svg" class="absolute w-4/12 md:w-2/12 | position-svg-2 svg-shadow">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 274" class="stroke-current absolute w-5/12 md:w-3/12 text-lightBlue | position-svg-3">
+        <rect width="262" height="262" x="13.801" y="530" fill="none" stroke-width="8" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+      </svg>
+
+      <div class="container relative z-20">
         <div class="row">
           <div class="col w-full xl:w-4/12 xl:ml-1/12 text-left">
             <h2 class="alpha" style="-webkit-text-stroke-color: #00DCFF;">Hey!</h2>
@@ -29,7 +40,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col w-full lg:w-6/12 xl:w-4/12 xl:ml-1/12 mt-20 md:mt-40 paragraph-lg">
+          <div class="col w-full md:w-8/12 lg:w-6/12 xl:w-4/12 xl:ml-1/12 mt-20 md:mt-40 paragraph-lg">
             <p class="mb-6">
               I love working in collaboration with designers and UX experts to build websites that pop.
             </p>
@@ -49,7 +60,7 @@
       </div>
     </header>
 
-    <section class="py-24 md:py-48 | section" data-color="bg-blue">
+    <section class="py-24 md:pb-48 md:pt-24 | section" data-color="bg-blue">
       <div class="container">
         <div class="row">
           <div class="col w-full sm:w-10/12 xl:ml-1/12 mb-20 md:mb-48">
@@ -59,10 +70,16 @@
           </div>
         </div>
         <div class="row">
-          <div class="col w-full xl:w-10/12 xl:ml-1/12 mb-16">
-            <div class="relative w-full bg-blue" style="padding-top: 64.1379310345%;">
+          <div class="col w-full xl:w-10/12 xl:ml-1/12 mb-32 relative">
+            <div class="relative w-full bg-blue z-20" style="padding-top: 64.1379310345%;">
               <img src="img/landtech-homepage.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
             </div>
+            <svg viewBox="0 0 273 274" class="stroke-current absolute text-lightBlue z-10 | position-svg-4">
+              <rect width="262" height="262" x="13.801" y="530" fill="none" stroke-width="12" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+            </svg>
+            <svg width="137" height="137" viewBox="0 0 137 137" class="fill-current absolute text-pink z-30 | position-svg-5 svg-shadow">
+              <rect width="137" height="137" x="1233" y="640" fill-rule="evenodd" rx="68.5" transform="translate(-1233 -640)" class="shadow-2xl" />
+            </svg>
           </div>
         </div>
         <div class="row">
@@ -86,7 +103,10 @@
       </div>
     </section>
 
-    <section class="py-24 md:pt-48 md:pb-64 | section" data-color="bg-purple">
+    <section class="py-24 md:pt-32 md:pb-64 relative | section" data-color="bg-purple">
+        <svg viewBox="0 0 137 137" class="absolute fill-current text-pink | position-svg-6 svg-shadow">
+          <rect width="137" height="137" x="1233" y="640" fill-rule="evenodd" rx="68.5" transform="translate(-1233 -640)"/>
+        </svg>
       <div class="container">
         <div class="row items-center flex-row-reverse md:flex-row">
           <div class="col w-full md:w-6/12 lg:w-5/12 xl:w-4/12 lg:ml-1/12 pb-8 mb-16">
@@ -103,18 +123,35 @@
               View live site
             </a>
           </div>
-          <div class="col w-9/12 md:w-5/12 lg:w-5/12 xl:w-4/12 md:ml-1/12">
-            <div class="relative w-full" style="padding-top: 156.5909090909%;">
+          <div class="col w-9/12 md:w-5/12 lg:w-5/12 xl:w-4/12 md:ml-1/12 relative">
+            <div class="relative w-full z-20" style="padding-top: 156.5909090909%;">
               <img src="img/citipark-mobile-homepage.jpg" class="inset-0 absolute w-full h-full rounded-lg shadow-2xl object-cover">
             </div>
+            <svg viewBox="0 0 137 137" class="absolute fill-current text-lightBlue w-4/12 z-10 | position-svg-7">
+              <rect width="137" height="137" x="1233" y="640" fill-rule="evenodd" rx="68.5" transform="translate(-1233 -640)"/>
+            </svg>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-24 md:pt-0 md:pb-48 | section" data-color="bg-blue">
+    <section class="py-24 md:pt-0 md:pb-48 relative | section" data-color="bg-blue">
+        <svg viewBox="0 0 273 274" class="stroke-current absolute text-pink opacity-50 | position-svg-8">
+          <rect width="262" height="262" x="13.801" y="530" fill="none" stroke-width="10" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+        </svg>
+        <svg viewBox="0 0 273 274" class="fill-current absolute text-pink z-20 | position-svg-12 svg-shadow">
+          <rect width="262" height="262" x="13.801" y="530" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+        </svg>
+        <svg viewBox="0 0 273 274" class="fill-current absolute text-lightBlue | position-svg-9 svg-shadow">
+          <rect width="262" height="262" x="13.801" y="530" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+        </svg>
+        <svg viewBox="0 0 273 274" class="stroke-current absolute text-pink | position-svg-10">
+          <rect width="262" height="262" x="13.801" y="530" fill="none" stroke-width="10" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+        </svg>
+        <svg viewBox="0 0 273 274" class="fill-current absolute text-lightBlue z-20 | position-svg-11 svg-shadow">
+          <rect width="262" height="262" x="13.801" y="530" rx="131" transform="rotate(-14 -1993.018 431.577)"/>
+        </svg>
       <div class="container">
-
         <div class="row">
           <div class="col w-full xl:w-11/12">
             <h2 class="alpha text-right break-words" style="-webkit-text-stroke-color: #00DCFF;">
@@ -122,7 +159,6 @@
             </h2>
           </div>
         </div>
-
         <div class="row mt-24 md:mt-16 lg:mt-32 flex-col-reverse md:flex-row">
           <div class="col w-full md:w-8/12 xl:w-6/12 xl:ml-1/12 mt-16 md:mt-48">
             <div class="relative w-full" style="padding-top: 73.2352941176%;">
@@ -177,7 +213,7 @@
       <div class="container">
         <div class="row">
           <div class="col w-11/12 lg:w-10/12 lg:ml-1/12 text-right">
-            <h2 class="alpha" style="-webkit-text-stroke-color: #00DCFF;">
+            <h2 class="alpha" style="-webkit-text-stroke-color: #FFC7DB;">
               Get in touch
             </h2>
           </div>

@@ -59,9 +59,76 @@ body {
   opacity: 1;
 }
 
+.svg-shadow {
+  filter: drop-shadow(20px 10px 50px rgba(0, 0, 0, 0.3));
+}
+
 .position-svg-1 {
-  top: 37%;
+  top: 30%;
+  left: -25%;
+  width: 70%;
+}
+
+.position-svg-2 {
+  top: 72%;
+  right: 18%;
+}
+
+.position-svg-3 {
+  top: 97%;
+  right: -8%;
+}
+
+.position-svg-4 {
+  top: 25%;
   left: -7%;
+  width: 200px;
+}
+
+.position-svg-5 {
+  right: -4%;
+  top: 60%;
+}
+
+.position-svg-6 {
+  top: -20%;
+  left: 8%;
+  width: 17%;
+}
+
+.position-svg-7 {
+  top: 90%;
+  right: -12%;
+}
+
+.position-svg-8 {
+  top: -4%;
+  left: -8%;
+  width: 35%;
+}
+
+.position-svg-9 {
+  width: 30%;
+  top: 40%;
+  right: -15%;
+}
+
+.position-svg-10 {
+  width: 25%;
+  top: 72%;
+  left: 9%;
+}
+
+.position-svg-11 {
+  width: 10%;
+  bottom: 9%;
+  right: 20%;
+}
+
+.position-svg-12 {
+  width: 10%;
+  top: 33%;
+  left: 5%;
 }
 
 @responsive {

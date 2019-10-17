@@ -16,7 +16,7 @@ function updateBackground() {
             const dataColor = $section.getAttribute('data-color')
             console.log(dataColor)
 
-            mainTag.className = "transitionBackground " + dataColor
+            mainTag.className = "transitionBackground overflow-hidden " + dataColor
         }
 
     })
