@@ -23,31 +23,38 @@ function updateBackground() {
 document.addEventListener('scroll', updateBackground)
 updateBackground()
 
-// parallax effect on SVGs
+const $$elements = document.querySelectorAll('.js-parallax')
+let bodyTop = document.querySelector('body').getBoundingClientRect().top
 
-const $$scrollEffectImages = document.querySelectorAll('.scroll-effect-image')
-console.log($$scrollEffectImages)
-const $$SVGTags = document.querySelectorAll(`[data-scroll]`)
-console.log($$SVGTags)
-const windowHeight = window.innerHeight
+function parallaxEffect() {
+    $$elements.forEach($element => {
+        const elTopFromVP = $element.getBoundingClientRect().top
+        const elementTopFromBody = elTopFromVP - bodyTop
+        const elementBottomFromBody = elementTopFromBody + $element.getBoundingClientRect().height
+        console.log(`top: ${elementTopFromBody}, bottom: ${elementBottomFromBody}`)
 
-document.addEventListener('scroll', () => {
-    const scrolledDistance = window.pageYOffset
-    const viewportMiddle = window.pageYOffset + (window.innerHeight / 2)
+        window.addEventListener('scroll', () => {
+            const windowBottom = window.pageYOffset + window.innerHeight
 
-    $$scrollEffectImages.forEach($image => {
-        const imageMiddle = $image.offsetTop + ($image.offsetHeight / 2)
-        const distanceToImageMiddle = viewportMiddle - imageMiddle
-
-        $$SVGTags.forEach($SVG => {
-            const speed = parseFloat($SVG.getAttribute('data-scroll'))
-            if($SVG.classList.contains('js-translateY')) {
-                $SVG.style.transform = `translateY(${distanceToImageMiddle * speed}px)`
-            } else if ($SVG.classList.contains('js-translateX')) {
-                $SVG.style.transform = `translateX(${distanceToImageMiddle * speed}px)`
+            if (windowBottom >= elementTopFromBody && elementBottomFromBody >= window.pageYOffset) {
+                console.log('the element should be in view')
+                const speed = parseFloat($element.getAttribute('data-parallax'))
+                if ($element.classList.contains('parallax-rotate')) {
+                    $element.style.transform = `rotate(${ (elementTopFromBody - windowBottom) * speed }deg)`
+                } else if ($element.classList.contains('parallax-scroll')) {
+                    $element.style.transform = `translateY(${ ((elementTopFromBody - windowBottom) * speed) }px)`
+                }
             }
         })
 
-
     })
-})
+}
+
+function checkScreen() {
+    if(window.innerWidth > 768) {
+        parallaxEffect()
+    }
+}
+
+checkScreen()
+window.addEventListener('resize', checkScreen())
