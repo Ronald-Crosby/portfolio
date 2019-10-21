@@ -31,13 +31,13 @@ function parallaxEffect() {
         const elTopFromVP = $element.getBoundingClientRect().top
         const elementTopFromBody = elTopFromVP - bodyTop
         const elementBottomFromBody = elementTopFromBody + $element.getBoundingClientRect().height
-        console.log(`top: ${elementTopFromBody}, bottom: ${elementBottomFromBody}`)
+        // console.log(`top: ${elementTopFromBody}, bottom: ${elementBottomFromBody}`)
 
         window.addEventListener('scroll', () => {
             const windowBottom = window.pageYOffset + window.innerHeight
 
             if (windowBottom >= elementTopFromBody && elementBottomFromBody >= window.pageYOffset) {
-                console.log('the element should be in view')
+                // console.log('the element should be in view')
                 const speed = parseFloat($element.getAttribute('data-parallax'))
                 if ($element.classList.contains('parallax-rotate')) {
                     $element.style.transform = `rotate(${ (elementTopFromBody - windowBottom) * speed }deg)`
