@@ -56,6 +56,13 @@ function img() {
         .pipe(dest('./build/img'))
 }
 
+// FONTS TASK
+    // Move font files to build folder
+function fonts() {
+    return src('./src/fonts/**/*')
+        .pipe(dest('./build/fonts'))
+}
+
 // WATCH TASK
     // watch for changes on html, css and js files
     // run html, css and js tasks on save and refresh browser.
@@ -74,6 +81,7 @@ exports.css = css;
 exports.js = js
 exports.html = html
 exports.img = img
+exports.fonts = fonts
 exports.watch = watch
-exports.default = series(css, js, html, img, watch)
-exports.build = series(css, js, html, img)
+exports.default = series(css, js, html, img, fonts, watch)
+exports.build = series(css, js, html, img, fonts)
