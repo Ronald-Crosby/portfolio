@@ -138,9 +138,9 @@
   .paragraph {
       font-family: 'Merriweather', times, serif;
       font-weight: 400;
-      line-height: 1.5;
+      line-height: 1.7;
       font-size: 14px;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.6px;
   }
 
   @screen sm {
@@ -151,7 +151,7 @@
 
   @screen md {
     .paragraph {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
 

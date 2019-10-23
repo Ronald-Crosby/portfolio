@@ -72,7 +72,7 @@ function watch() {
             baseDir: './build'
         }
     })
-    gulp.watch('./src/*.html').on('change', browserSync.reload)
+    gulp.watch('./src/*.html', html).on('change', browserSync.reload)
     gulp.watch('./src/css/**/*.css', css)
     gulp.watch('./src/js/**/*.js', js).on('change', browserSync.reload)
 }
