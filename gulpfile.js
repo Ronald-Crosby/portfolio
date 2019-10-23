@@ -9,25 +9,25 @@ const postcss = require('gulp-postcss')
 const browserSync = require('browser-sync').create()
 
 // CSS TASK
-    // compile and move from ./public/src/main.css to ./public/build/main.css
+    // compile and move from ./src/main.css to ./build/main.css
     // add postcss in
         // add plugins as listed in postcss.config.js
         // on env.production run purgecss and cssnano
 function css() {
-    return src('./public/src/css/main.css')
+    return src('./src/css/main.css')
         .pipe(sourcemaps.init())
             .pipe(postcss())
         .pipe(sourcemaps.write())
-        .pipe(dest('./public/build'))
+        .pipe(dest('./build'))
         .pipe(browserSync.stream())
 }
 
 // JS TASK
     // separate out JS tasks into their own files
-    // compile JS from ./public/src/js/*.js to ./public/build/main.js
+    // compile JS from ./src/js/*.js to ./build/main.js
         // add gulp-babel plugin for ES6.
 function js() {
-    return src('./public/src/js/*.js')
+    return src('./src/js/*.js')
 
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
@@ -36,24 +36,24 @@ function js() {
         }))
         .pipe(uglify())
         .pipe(sourcemaps.write())
-        .pipe(dest('./public/build'))
+        .pipe(dest('./build'))
         .pipe(browserSync.stream())
 }
 
 // HTML TASK
-    // Move index.html from ./public/build/index.html
+    // Move index.html from ./build/index.html
 function html() {
-    return src('./public/src/index.html')
-        .pipe(dest('./public/build'))
+    return src('./src/index.html')
+        .pipe(dest('./build'))
         .pipe(browserSync.stream())
 }
 
 // IMG TASK
     // Images are already optimised for web via squoosh
-    // move images from ./public/src/img to ./public/build/img
+    // move images from ./src/img to ./build/img
 function img() {
-    return src('./public/src/img/**/*')
-        .pipe(dest('./public/build/img'))
+    return src('./src/img/**/*')
+        .pipe(dest('./build/img'))
 }
 
 // WATCH TASK
@@ -62,12 +62,12 @@ function img() {
 function watch() {
     browserSync.init({
         server: {
-            baseDir: './public/build'
+            baseDir: './build'
         }
     })
-    gulp.watch('./public/src/*.html').on('change', browserSync.reload)
-    gulp.watch('./public/src/css/*.css', css)
-    gulp.watch('./public/src/js/*.js').on('change', browserSync.reload)
+    gulp.watch('./src/*.html').on('change', browserSync.reload)
+    gulp.watch('./src/css/**/*.css', css)
+    gulp.watch('./src/js/**/*.js', js).on('change', browserSync.reload)
 }
 
 exports.css = css;

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="431" height="388" viewBox="0 0 431 388">
+  <defs>
+    <linearGradient id="rectangle-copy-a" x1="16.273%" x2="72.411%" y1="72.699%" y2="53.572%">
+      <stop offset="0%" stop-color="#FFE7F0"/>
+      <stop offset="100%" stop-color="#FFC7DB"/>
+    </linearGradient>
+  </defs>
+  <rect width="495" height="492" x="1009" y="-104" fill="url(#rectangle-copy-a)" fill-rule="evenodd" rx="246" transform="translate(-1009)"/>
+</svg>
