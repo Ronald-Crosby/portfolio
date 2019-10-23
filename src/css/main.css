@@ -41,8 +41,8 @@ body {
   color: #FFC7DB;
 }
 
-.transitionBackground {
-  transition: background-color 0.5s linear;
+.transition-background {
+  transition: all 0.5s linear;
 }
 
 .hover-fill-text::after {

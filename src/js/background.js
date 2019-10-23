@@ -9,7 +9,7 @@ function updateBackground() {
 
         if(windowTopPosition + 500 >= sectionTop) {
             const dataColor = $section.getAttribute('data-color')
-            mainTag.className = "transitionBackground overflow-hidden " + dataColor
+            mainTag.className = "transition-background overflow-hidden " + dataColor
         }
 
     })
