@@ -20,17 +20,17 @@
 }
 
 @font-face {
-  font-family: "Asul";
+  font-family: "Merriweather";
   font-weight: 400;
-  src: url("../fonts/Asul/Asul-Regular.woff2") format("woff2"),
-       url("../fonts/Asul/Asul-Regular.woff") format("woff");
+  src: url("../fonts/Merriweather/Merriweather-Regular.woff2") format("woff2"),
+       url("../fonts/Merriweather/Merriweather-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Asul";
+  font-family: "Merriweather";
   font-weight: 700;
-  src: url("../fonts/Asul/Asul-Bold.woff2") format("woff2"),
-       url("../fonts/Asul/Asul-Bold.woff") format("woff");
+  src: url("../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"),
+       url("../fonts/Merriweather/Merriweather-Bold.woff") format("woff");
 }
 
 @responsive {
@@ -136,7 +136,7 @@
   }
 
   .paragraph {
-      font-family: 'Asul', times, serif;
+      font-family: 'Merriweather', times, serif;
       font-weight: 400;
       line-height: 1.5;
       font-size: 14px;
@@ -157,7 +157,7 @@
 
 
   .button {
-      font-family: 'Asul', times, serif;
+      font-family: 'Merriweather', times, serif;
       font-weight: 700;
       line-height: 1;
       font-size: 14px;
