@@ -1,33 +1,51 @@
 const $$elements = document.querySelectorAll('.js-parallax')
 let bodyTop = document.querySelector('body').getBoundingClientRect().top
 
-function parallaxEffect() {
+let parallaxData = []
+
+function getData() {
     $$elements.forEach($element => {
+        // the position of the top of the element from the top of the viewport
         const elTopFromVP = $element.getBoundingClientRect().top
+        // top of the element from the top of the body tag
         const elementTopFromBody = elTopFromVP - bodyTop
+        // bottom of the element from the top of the body tag
         const elementBottomFromBody = elementTopFromBody + $element.getBoundingClientRect().height
-        // console.log(`top: ${elementTopFromBody}, bottom: ${elementBottomFromBody}`)
 
-        window.addEventListener('scroll', () => {
-            const windowBottom = window.pageYOffset + window.innerHeight
-
-            if (windowBottom >= elementTopFromBody && elementBottomFromBody >= window.pageYOffset) {
-                // console.log('the element should be in view')
-                const speed = parseFloat($element.getAttribute('data-parallax'))
-                if ($element.classList.contains('parallax-rotate')) {
-                    $element.style.transform = `rotate(${ (elementTopFromBody - windowBottom) * speed }deg)`
-                } else if ($element.classList.contains('parallax-scroll')) {
-                    $element.style.transform = `translateY(${ ((elementTopFromBody - windowBottom) * speed) }px)`
-                }
-            }
+        parallaxData.push({
+            elem: $element,
+            elTop: parseInt(elementTopFromBody),
+            elBottom: parseInt(elementBottomFromBody),
+            speed: parseFloat($element.getAttribute('data-parallax')),
+            isRotate: $element.classList.contains('parallax-rotate'),
+            isScroll: $element.classList.contains('parallax-scroll')
         })
-
     })
 }
 
+console.log(parallaxData)
+
+const updateParallax = () => {
+  const windowBottom = window.pageYOffset + window.innerHeight
+
+    parallaxData.forEach((data) => {
+        if (windowBottom >= data.elTop && data.elBottom >= window.pageYOffset) {
+            // console.log('the element should be in view')
+            if (data.isRotate) {
+                data.elem.style.transform = `rotate(${ (data.elBottom - windowBottom) * data.speed }deg)`
+            } else if (data.isScroll) {
+                data.elem.style.transform = `translate3d(0, ${ ((data.elTop - windowBottom) * data.speed) }px, 0)`
+            }
+        }
+    })
+}
+
+window.addEventListener('scroll', updateParallax)
+getData()
+
 function checkScreen() {
     if(window.innerWidth > 768) {
-        parallaxEffect()
+        updateParallax()
     }
 }
 

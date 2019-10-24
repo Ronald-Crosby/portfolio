@@ -1,17 +1,22 @@
-const mainTag = document.getElementById('mainTag')
-const $$sections = document.querySelectorAll('.section')
 
-function updateBackground() {
-    let windowTopPosition = window.pageYOffset
+const backgroundTag = document.getElementById('background')
+const colorSections = document.querySelectorAll("[data-color]")
 
-    $$sections.forEach($section => {
-        const sectionTop = $section.offsetTop
+let colorSectionData = []
 
-        if(windowTopPosition + 500 >= sectionTop) {
-            const dataColor = $section.getAttribute('data-color')
-            mainTag.className = "transition-background overflow-hidden " + dataColor
+colorSections.forEach(section => {
+    colorSectionData.push({
+        offset: parseInt(section.getBoundingClientRect().top + window.pageYOffset),
+        classes: section.getAttribute("data-color")
+    })
+})
+
+const updateBackground = () => {
+    const windowScroll = window.pageYOffset
+    colorSectionData.forEach(({ offset, classes }) => {
+        if(windowScroll + 500 >= offset) {
+            backgroundTag.className = classes
         }
-
     })
 }
 

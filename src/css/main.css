@@ -33,16 +33,30 @@ body {
   transition: width 0.3s;
 }
 
-.button:hover::after {
-  width: 0;
+@screen md {
+  .button:hover::after {
+    width: 0;
+  }
+
+  .button:hover {
+    color: #FFC7DB;
+  }
 }
 
-.button:hover {
-  color: #FFC7DB;
-}
-
-.transition-background {
+#background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
   transition: all 0.5s linear;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+main {
+  overflow: hidden;
 }
 
 .hover-fill-text::after {
@@ -57,8 +71,10 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.hover-fill-text:hover.hover-fill-text::after {
-  opacity: 1;
+@screen md {
+  .hover-fill-text:hover.hover-fill-text::after {
+    opacity: 1;
+  }
 }
 
 .svg-shadow {
