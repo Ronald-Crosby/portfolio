@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="530" height="560" viewBox="0 0 530 560">
+  <defs>
+    <linearGradient id="fade-blue-pink-a" x1="23.219%" x2="95.8%" y1="68.142%" y2="5.388%">
+      <stop offset="0%" stop-color="#FFE7F0"/>
+      <stop offset="100%" stop-color="#00DCFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="647" height="643" x="-117" y="7015" fill="url(#fade-blue-pink-a)" fill-rule="evenodd" rx="321.5" transform="rotate(-160 -411.879 3829.5)"/>
+</svg>

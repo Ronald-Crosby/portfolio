@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279" height="227" viewBox="0 0 279 227">
+  <defs>
+    <linearGradient id="double-circle-fill-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#00DCFF"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-21.8 -2)">
+    <rect width="206" height="206" x="22" y="22" fill="url(#double-circle-fill-a)" rx="103" transform="rotate(-14 125 125)"/>
+    <path fill="#FFC7DB" d="M239.800508,2 C273.489878,2 300.800508,29.3106303 300.800508,63 L300.800508,63.2381123 C300.800508,97.2410584 273.787545,125.093293 239.800508,126.133333 C207.1263,127.1332 179.828069,101.456072 178.828202,68.7818641 C178.809741,68.1785678 178.800508,67.5750244 178.800508,66.9714457 L178.800508,63 C178.800508,29.3106303 206.111139,2 239.800508,2 Z"/>
+  </g>
+</svg>
