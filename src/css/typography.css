@@ -166,3 +166,45 @@
     }
   }
 }
+
+.button::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 400%;
+  transform: translate(-11%, -20%);
+  transform-origin: center;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc7db;
+  transition: width 0.3s;
+}
+
+@screen lg {
+  .button:hover::after {
+    width: 0;
+  }
+  .button:hover {
+    color: #ffc7db;
+  }
+}
+
+@screen md {
+  .button:hover::after {
+    width: 0;
+  }
+
+  .button:hover {
+    color: #ffc7db;
+  }
+}
